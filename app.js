@@ -179,11 +179,11 @@ function showTasks(){
 
         let completadoCheckList = [];
         
-        console.log(i);
+        // console.log(i);
         let completadoCheck = document.getElementById(timeID.concat("check"));
-        console.log(completadoCheck);
+        // console.log(completadoCheck);
         completadoCheckList.push(completadoCheck);
-        console.log(completadoCheckList);
+        // console.log(completadoCheckList);
         completadoCheckList[0].addEventListener('change', function() {
             let taskComp = document.getElementById(timeID);
             if (this.checked) {
@@ -217,7 +217,7 @@ function showFinished(e){
             i = i+1;
         }
     } else {
-        var tList = document.getElementsByClassName("hide");
+        var tList = document.getElementsByClassName("toHide");
         while (tList.length){
             var i = 0;
             tList[i].classList.add("hide");
